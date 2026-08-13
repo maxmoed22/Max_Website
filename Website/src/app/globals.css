@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  /* Matrix / 80s retro palette — always dark, sourced from the Figma moodboard */
+  --background: #050705;
+  --foreground: #d8ffe0;
+
+  --matrix-green: #39ff14;
+  --matrix-green-dim: #0f7a1f;
+  --neon-cyan: #00fff5;
+  --neon-magenta: #ff00e5;
+  --neon-pink: #ff2e88;
+  --neon-yellow: #f6ff00;
+
+  --grid-line: rgba(57, 255, 20, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-matrix-green: var(--matrix-green);
+  --color-matrix-green-dim: var(--matrix-green-dim);
+  --color-neon-cyan: var(--neon-cyan);
+  --color-neon-magenta: var(--neon-magenta);
+  --color-neon-pink: var(--neon-pink);
+  --color-neon-yellow: var(--neon-yellow);
+  --font-sans: var(--font-heading);
+  --font-mono: var(--font-mono-retro);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 100% 42px,
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 42px 100%,
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono-retro), ui-monospace, monospace;
+}
+
+@layer utilities {
+  .text-glow-green {
+    color: var(--matrix-green);
+    text-shadow:
+      0 0 4px rgba(57, 255, 20, 0.8),
+      0 0 16px rgba(57, 255, 20, 0.5),
+      0 0 40px rgba(57, 255, 20, 0.25);
+  }
+
+  .text-glow-cyan {
+    color: var(--neon-cyan);
+    text-shadow:
+      0 0 4px rgba(0, 255, 245, 0.8),
+      0 0 16px rgba(0, 255, 245, 0.45);
+  }
+
+  .text-glow-magenta {
+    color: var(--neon-magenta);
+    text-shadow:
+      0 0 4px rgba(255, 0, 229, 0.8),
+      0 0 16px rgba(255, 0, 229, 0.45);
+  }
+
+  .text-glow-pink {
+    color: var(--neon-pink);
+    text-shadow:
+      0 0 4px rgba(255, 46, 136, 0.8),
+      0 0 16px rgba(255, 46, 136, 0.45);
+  }
+
+  .text-glow-yellow {
+    color: var(--neon-yellow);
+    text-shadow:
+      0 0 4px rgba(246, 255, 0, 0.8),
+      0 0 16px rgba(246, 255, 0, 0.45);
+  }
+
+  .border-glow-green {
+    border-color: rgba(57, 255, 20, 0.4);
+    box-shadow:
+      0 0 0 1px rgba(57, 255, 20, 0.12) inset,
+      0 0 24px rgba(57, 255, 20, 0.12);
+  }
+
+  .border-glow-cyan {
+    border-color: rgba(0, 255, 245, 0.4);
+    box-shadow:
+      0 0 0 1px rgba(0, 255, 245, 0.12) inset,
+      0 0 24px rgba(0, 255, 245, 0.15);
+  }
+
+  .border-glow-pink {
+    border-color: rgba(255, 46, 136, 0.4);
+    box-shadow:
+      0 0 0 1px rgba(255, 46, 136, 0.12) inset,
+      0 0 24px rgba(255, 46, 136, 0.15);
+  }
+
+  .border-glow-yellow {
+    border-color: rgba(246, 255, 0, 0.4);
+    box-shadow:
+      0 0 0 1px rgba(246, 255, 0, 0.12) inset,
+      0 0 24px rgba(246, 255, 0, 0.15);
+  }
+
+  .btn-glow-green {
+    background: var(--matrix-green);
+    color: #04140a;
+    box-shadow:
+      0 0 12px rgba(57, 255, 20, 0.6),
+      0 0 32px rgba(57, 255, 20, 0.35);
+  }
+
+  .btn-glow-green:hover {
+    box-shadow:
+      0 0 16px rgba(57, 255, 20, 0.9),
+      0 0 48px rgba(57, 255, 20, 0.5);
+  }
+
+  .scanline-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(57, 255, 20, 0.06) 0px,
+      rgba(57, 255, 20, 0.06) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+}
