@@ -17,7 +17,7 @@ export default function Nav() {
           {profile.name}_
         </Link>
 
-        <ul className="hidden gap-8 text-sm uppercase tracking-wider text-foreground/60 sm:flex">
+        <ul className="hidden gap-8 text-sm uppercase tracking-wider text-white sm:flex">
           {navLinks.map((link, i) => {
             const colors = [
               "hover:text-neon-cyan",
@@ -55,7 +55,7 @@ export default function Nav() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="block py-2 text-foreground/60 hover:text-matrix-green"
+                className="block py-2 text-white hover:text-matrix-green"
                 onClick={() => setOpen(false)}
               >
                 {link.label}

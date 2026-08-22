@@ -15,7 +15,7 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Max — Software Engineer",
+  title: "Max Moed Career Portfolio",
   description: "Career and project portfolio of Max.",
 };
 

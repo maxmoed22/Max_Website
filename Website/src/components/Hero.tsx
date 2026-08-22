@@ -1,10 +1,18 @@
 import { profile } from "@/data/site";
+import Image from "next/image";
 
 const accents = [
-  "border-glow-green",
-  "border-glow-cyan",
-  "border-glow-pink",
-  "border-glow-yellow",
+  "border-glow-green bg-matrix-green/100 shadow-[0_0_24px_rgba(57,255,20,0.2)]",
+  "border-glow-cyan bg-neon-cyan/100 shadow-[0_0_24px_rgba(0,255,245,0.2)]",
+  "border-glow-pink bg-neon-pink/100 shadow-[0_0_24px_rgba(255,46,136,0.2)]",
+  "border-glow-yellow bg-neon-yellow/100 shadow-[0_0_24px_rgba(246,255,0,0.2)]",
+];
+
+const companyLogos = [
+  { src: "/company-logos/american-honda.png", alt: "American Honda" },
+  { src: "/company-logos/hershey.png", alt: "The Hershey Company" },
+  { src: "/company-logos/paychex.png", alt: "Paychex" },
+  { src: "/company-logos/jm-family.png", alt: "JM Family" },
 ];
 
 export default function Hero() {
@@ -40,16 +48,19 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Image showcase grid — replace placeholders with real project/work imagery */}
       <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
-        {[0, 1, 2, 3].map((i) => (
+        {companyLogos.map((logo, i) => (
           <div
             key={i}
-            className={`scanline-card relative aspect-square overflow-hidden rounded-none border bg-black/40 ${accents[i % accents.length]}`}
+            className={`scanline-card relative aspect-square overflow-hidden rounded-none border ${accents[i % accents.length]}`}
           >
-            <span className="absolute bottom-2 left-2 font-[family-name:var(--font-mono-retro)] text-[10px] uppercase tracking-widest text-foreground/30">
-              0{i + 1}
-            </span>
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              fill
+              className="object-contain p-6 sm:p-8"
+              sizes="(min-width: 640px) 25vw, 50vw"
+            />
           </div>
         ))}
       </div>

@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
       <h2 className="mb-6 font-[family-name:var(--font-heading)] text-sm font-bold uppercase tracking-[0.3em] text-glow-magenta">
-        // Contact
+        Contact
       </h2>
       <h3 className="max-w-2xl font-[family-name:var(--font-heading)] text-3xl font-extrabold uppercase tracking-tight text-glow-green sm:text-5xl">
         Let&apos;s work together.
@@ -20,12 +20,12 @@ export default function Contact() {
         {profile.email}
       </a>
 
-      <div className="mt-10 flex gap-6 text-sm uppercase tracking-wider text-foreground/60">
+      <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm font-bold uppercase tracking-[0.18em]">
         {profile.socials.map((social, i) => {
           const colors = [
-            "hover:text-neon-cyan",
-            "hover:text-neon-pink",
-            "hover:text-neon-yellow",
+            "text-neon-cyan drop-shadow-[0_0_2px_rgba(0,255,245,0.4)] hover:drop-shadow-[0_0_3px_rgba(0,255,245,0.55)]",
+            "text-neon-pink drop-shadow-[0_0_2px_rgba(255,46,136,0.4)] hover:drop-shadow-[0_0_3px_rgba(255,46,136,0.55)]",
+            "text-neon-yellow drop-shadow-[0_0_2px_rgba(246,255,0,0.4)] hover:drop-shadow-[0_0_3px_rgba(246,255,0,0.55)]",
           ];
           return (
             <a
@@ -33,7 +33,7 @@ export default function Contact() {
               href={social.href}
               target="_blank"
               rel="noreferrer"
-              className={`transition-colors ${colors[i % colors.length]}`}
+              className={`transition-[color,filter] ${colors[i % colors.length]}`}
             >
               {social.label}
             </a>
