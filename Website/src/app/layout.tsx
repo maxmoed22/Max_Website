@@ -17,6 +17,26 @@ const shareTechMono = Share_Tech_Mono({
 export const metadata: Metadata = {
   title: "Max Moed Career Portfolio",
   description: "Career and project portfolio of Max.",
+  metadataBase: new URL("https://maxmoed.com"),
+  openGraph: {
+    title: "Max Moed Career Portfolio",
+    description: "Career and project portfolio of Max.",
+    url: "https://maxmoed.com",
+    siteName: "Max Moed",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1187,
+        height: 630,
+        alt: "Max Moed Career Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
