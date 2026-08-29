@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Orbitron, Share_Tech_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const orbitron = Orbitron({
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
+        <Analytics />
       </body>
     </html>
   );
