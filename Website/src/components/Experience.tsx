@@ -29,17 +29,19 @@ export default function Experience() {
                 {
                   (() => {
                     const desc = item.description;
-                    if (
-                      typeof desc === "string" &&
-                      (desc.trimStart().startsWith("-") || desc.includes("\n-"))
-                    ) {
-                      const bullets = desc
-                        .split(/\n\s*\n/)
-                        .map((s) => s.replace(/^\s*-\s*/, "").trim())
-                        .filter(Boolean);
+                    const bulletItems = typeof desc === "string"
+                      ? desc
+                          .split(/\r?\n/)
+                          .map((line) => line.trim())
+                          .filter((line) => line.startsWith("-"))
+                          .map((line) => line.replace(/^-\s*/, "").trim())
+                          .filter(Boolean)
+                      : [];
+
+                    if (bulletItems.length > 0) {
                       return (
-                        <ul className="mt-2 max-w-2xl text-foreground/60 list-disc pl-6 space-y-3">
-                          {bullets.map((b, idx) => (
+                        <ul className="mt-2 max-w-2xl list-disc space-y-3 pl-6 text-foreground/60">
+                          {bulletItems.map((b, idx) => (
                             <li key={idx} className="leading-relaxed">
                               {b}
                             </li>
@@ -47,6 +49,7 @@ export default function Experience() {
                         </ul>
                       );
                     }
+
                     return (
                       <p className="mt-2 max-w-2xl text-foreground/60">
                         {desc}
