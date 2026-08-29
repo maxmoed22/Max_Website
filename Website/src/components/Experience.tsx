@@ -63,6 +63,39 @@ export default function Experience() {
         })}
       </ol>
 
+      <div className="mt-16">
+        <h3 className="mb-8 font-[family-name:var(--font-heading)] text-sm font-bold uppercase tracking-[0.3em] text-glow-cyan">
+          Education
+        </h3>
+
+        <ol className="flex flex-col">
+          {education.map((item, i) => {
+            const periodColors = [
+              "text-neon-cyan",
+              "text-neon-pink",
+              "text-neon-yellow",
+            ];
+            return (
+              <li
+                key={`${item.school}-${item.degree}`}
+                className="grid grid-cols-1 gap-2 border-t border-matrix-green/15 py-8 first:border-t-0 sm:grid-cols-[160px_1fr]"
+              >
+                <span className={`text-base uppercase tracking-wider sm:text-lg ${periodColors[i % periodColors.length]}`}>
+                  {item.period}
+                </span>
+                <div>
+                  <h4 className="font-[family-name:var(--font-heading)] text-lg font-bold uppercase tracking-wide text-matrix-green">
+                    {item.degree}
+                    {item.field && <span className="font-normal text-foreground/70"> · {item.field}</span>}
+                  </h4>
+                  <p className="mt-2 max-w-2xl text-foreground/60">{item.school}</p>
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+
       <div className="mt-16 grid gap-8 lg:grid-cols-2">
         <div className="rounded-none border border-matrix-green/15 bg-black/20 p-6">
           <h3 className="mb-4 font-[family-name:var(--font-heading)] text-sm font-bold uppercase tracking-[0.3em] text-glow-cyan">
@@ -95,39 +128,6 @@ export default function Experience() {
             </li>
           </ul>
         </div>
-      </div>
-
-      <div className="mt-16">
-        <h3 className="mb-8 font-[family-name:var(--font-heading)] text-sm font-bold uppercase tracking-[0.3em] text-glow-cyan">
-          Education
-        </h3>
-
-        <ol className="flex flex-col">
-          {education.map((item, i) => {
-            const periodColors = [
-              "text-neon-cyan",
-              "text-neon-pink",
-              "text-neon-yellow",
-            ];
-            return (
-              <li
-                key={`${item.school}-${item.degree}`}
-                className="grid grid-cols-1 gap-2 border-t border-matrix-green/15 py-8 first:border-t-0 sm:grid-cols-[160px_1fr]"
-              >
-                <span className={`text-base uppercase tracking-wider sm:text-lg ${periodColors[i % periodColors.length]}`}>
-                  {item.period}
-                </span>
-                <div>
-                  <h4 className="font-[family-name:var(--font-heading)] text-lg font-bold uppercase tracking-wide text-matrix-green">
-                    {item.degree}
-                    {item.field && <span className="font-normal text-foreground/70"> · {item.field}</span>}
-                  </h4>
-                  <p className="mt-2 max-w-2xl text-foreground/60">{item.school}</p>
-                </div>
-              </li>
-            );
-          })}
-        </ol>
       </div>
     </section>
   );
