@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section id="work" className="mx-auto max-w-6xl px-6 py-20">
       <h2 className="mb-8 font-[family-name:var(--font-heading)] text-sm font-bold uppercase tracking-[0.3em] text-glow-green">
-        Selected Work
+        Selected Work (Click to View Project)
       </h2>
 
       <div className="grid gap-6 sm:grid-cols-2">
