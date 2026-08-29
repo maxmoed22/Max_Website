@@ -91,7 +91,7 @@ export default function Experience() {
               <span className="font-semibold text-matrix-green">Awards:</span> Alteryx Customer Excellence Award - Business Impact, 2025
             </li>
             <li>
-              <span className="font-semibold text-matrix-green">Certifications:</span> TOGAF Business Architecture Level 1, Alteryx Designer Core, Cyber Security and Forensics Foundations, Google Data Analytics 1 &amp; 2, Snowflake Gen AI Bootcamp, Lean Six Sigma Green Belt, Advanced SQL for Data Analytics, Azure AZ-900 Azure Fundamentals
+              <span className="font-semibold text-matrix-green">Certifications:</span> TOGAF Business Architecture Level 1, Alteryx Designer Core, Cyber Security and Forensics Foundations, Google Data Analytics 1 &amp; 2, Snowflake Gen AI Bootcamp, Lean Six Sigma Green Belt, Advanced SQL for Data Analytics, Azure AZ-900 Azure Fundamentals, Figma UI UX Design Essentials
             </li>
           </ul>
         </div>
