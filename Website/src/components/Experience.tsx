@@ -63,6 +63,40 @@ export default function Experience() {
         })}
       </ol>
 
+      <div className="mt-16 grid gap-8 lg:grid-cols-2">
+        <div className="rounded-none border border-matrix-green/15 bg-black/20 p-6">
+          <h3 className="mb-4 font-[family-name:var(--font-heading)] text-sm font-bold uppercase tracking-[0.3em] text-glow-cyan">
+            Skills &amp; Expertise
+          </h3>
+          <ul className="space-y-2 text-sm leading-relaxed text-foreground/70">
+            <li>Enterprise Architecture</li>
+            <li>Business Architecture</li>
+            <li>Enterprise &amp; Business Modeling</li>
+            <li>Risk &amp; Security Analysis</li>
+            <li>SAP Datasphere &amp; SAC</li>
+            <li>Alteryx, Power BI, SQL, Databricks, Snowflake</li>
+            <li>Azure, AWS, Python, Excel, Visio</li>
+            <li>Digital Commerce, Strategy, Leadership</li>
+            <li>Unify IRI, Circana, Salsify, Profitero, Walmart Luminate</li>
+            <li>Jira, Confluence, Loop, GitHub, Figma</li>
+          </ul>
+        </div>
+
+        <div className="rounded-none border border-matrix-green/15 bg-black/20 p-6">
+          <h3 className="mb-4 font-[family-name:var(--font-heading)] text-sm font-bold uppercase tracking-[0.3em] text-glow-cyan">
+            Awards &amp; Certifications
+          </h3>
+          <ul className="space-y-3 text-sm leading-relaxed text-foreground/70">
+            <li>
+              <span className="font-semibold text-matrix-green">Awards:</span> Alteryx Customer Excellence Award - Business Impact, 2025
+            </li>
+            <li>
+              <span className="font-semibold text-matrix-green">Certifications:</span> TOGAF Business Architecture Level 1, Alteryx Designer Core, Cyber Security and Forensics Foundations, Google Data Analytics 1 &amp; 2, Snowflake Gen AI Bootcamp, Lean Six Sigma Green Belt, Advanced SQL for Data Analytics, Azure AZ-900 Azure Fundamentals
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="mt-16">
         <h3 className="mb-8 font-[family-name:var(--font-heading)] text-sm font-bold uppercase tracking-[0.3em] text-glow-cyan">
           Education
