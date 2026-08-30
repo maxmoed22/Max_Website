@@ -77,7 +77,7 @@ export const experience: ExperienceItem[] = [
     period: "April 2026 — Present",
     description: `- Techline Dashboard — Created wireframes, models, and dashboards in Qlik, Power BI, and AWS Redshift for the Techline team, helping identify warranty issues faster and saving 5–10 hours per week per user.
 - Battery Dashboard — Created a GitHub repository, ETL pipeline, QVD generators, and a Qlik dashboard to surface “Golden Battery” candidates and potential problem dealerships, saving Honda thousands in false replacement battery warranty claims.
-- BEAR Application — Built a budgeting and expense reporting full-stack app with MySQL, Figma, and a Python backend, using agile sprints and GitHub CI/CD across market quality and expense teams.`,
+- BEAR Application — Leading UI/UX design for budgeting and expense reporting app (BEAR) full-stack app with Figma, Confluence, and VS Code using agile sprints and GitHub CI/CD across market quality and expense teams.`,
   },
   {
     role: "Dx Program Lead - Business Architect",
