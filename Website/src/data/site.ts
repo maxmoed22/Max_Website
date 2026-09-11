@@ -54,6 +54,13 @@ export const projects: Project[] = [
     href: "https://docs.google.com/spreadsheets/d/1ZVfJwoobJyOANylzmHSCWzozOdlPDgfanUIxDboS5YY/edit?usp=sharing",
     image: "/projects/matrix-pbi.png",
   },
+  // {
+  //   title: "Project Title",
+  //   description: "Project description goes here.",
+  //   tags: ["Tag1", "Tag2"],
+  //   href: "/projects/example.pdf",
+  //   image: "/projects/example-thumbnail.png",
+  // },
 ];
 
 export type ExperienceItem = {
