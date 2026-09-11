@@ -19,8 +19,8 @@ export const about = {
   heading: "About",
   subheading: "Outside of Work",
   paragraphs: [
-    "I'm a technology and analytics professional with a background in enterprise architecture, business architecture, data analytics, and digital innovation. I enjoy working at the intersection [...]
-    "When I'm not working, I love spending time with my friends, cooking, and staying active. I'm also really interested in building PCs and learning more about the hardware and technology tha[...]
+    "I'm a technology and analytics professional with a background in enterprise architecture, business architecture, data analytics, and digital innovation. I enjoy working at the intersection of technology and business to drive meaningful impact.",
+    "When I'm not working, I love spending time with my friends, cooking, and staying active. I'm also really interested in building PCs and learning more about the hardware and technology that powers everything we use.",
   ],
 };
 
@@ -68,9 +68,9 @@ export const experience: ExperienceItem[] = [
     role: "Senior Developer",
     company: "American Honda Motor Co.",
     period: "April 2026 — Present",
-    description: `- Techline Dashboard — Created wireframes, models, and dashboards in Qlik, Power BI, and AWS Redshift for the Techline team, helping identify warranty issues faster and saving [...]
-- Battery Dashboard — Created a GitHub repository, ETL pipeline, QVD generators, and a Qlik dashboard to surface "Golden Battery" candidates and potential problem dealerships, saving Honda t[...]
-- BEAR Application — Leading UI/UX design for budgeting and expense reporting app (BEAR) full-stack app with Figma, Confluence, and VS Code using agile sprints and GitHub CI/CD across market qua[...]
+    description: `- Techline Dashboard — Created wireframes, models, and dashboards in Qlik, Power BI, and AWS Redshift for the Techline team, helping identify warranty issues faster and saving time.
+- Battery Dashboard — Created a GitHub repository, ETL pipeline, QVD generators, and a Qlik dashboard to surface "Golden Battery" candidates and potential problem dealerships, saving Honda resources.
+- BEAR Application — Leading UI/UX design for budgeting and expense reporting app (BEAR) full-stack app with Figma, Confluence, and VS Code using agile sprints and GitHub CI/CD across teams.`,
   },
   {
     role: "Dx Program Lead - Business Architect",
@@ -83,25 +83,25 @@ export const experience: ExperienceItem[] = [
     role: "Lead Analyst, OMNI & B2B Insights",
     company: "The Hershey Company",
     period: "October 2024 — October 2025",
-    description: `- Developed and automated monthly digital performance reports for the Walmart OMNI team covering search, content, and ratings/reviews using Alteryx and Databricks, saving 5 hours[...]
-- Led a competitive insights project and presented key findings to leadership, guiding strategic decisions and delivering 4% budget savings based on competitor practices.
-- Built B2B sales reporting models in SAP Datasphere and dashboards in SAC to support data-driven decision-making and track transitions from email to web orders, driving a 10% sales increase on av[...]
-- Built an on-demand Power BI dashboard for Instacart, GoPuff, Uber, and DoorDash to drive insights and increase sales by 20%.
-- Expanded the KPS dashboard using Python in Databricks and Power BI to improve product keyword targeting across retailers, helping paid media and SEO drive overall sales growth of more than 5%.`,
+    description: `- Developed and automated monthly digital performance reports for the Walmart OMNI team covering search, content, and ratings/reviews using Alteryx and Databricks.
+- Led a competitive insights project and presented key findings to leadership, guiding strategic decisions and delivering cost savings based on competitor practices.
+- Built B2B sales reporting models in SAP Datasphere and dashboards in SAC to support data-driven decision-making and track transitions from email to web orders.
+- Built an on-demand Power BI dashboard for Instacart, GoPuff, Uber, and DoorDash to drive insights and increase sales.
+- Expanded the KPS dashboard using Python in Databricks and Power BI to improve product keyword targeting across retailers, helping drive overall sales growth.`,
   },
   {
     role: "Analyst, Insights & Analytics",
     company: "The Hershey Company",
     period: "June 2023 — October 2024",
-    description: `- Delivered the end-to-end automation of the CTT system using Alteryx, Axway Secure File Transfer, and Azure File Storage, Databricks, and designed the front-end in Power BI to [...]
-- Designed and implemented the Content Comparison Audit Tool (Alteryx + Power BI) to align brand and content teams on preferred digital assets, improving customer experience and reducing content [...]
+    description: `- Delivered the end-to-end automation of the CTT system using Alteryx, Axway Secure File Transfer, and Azure File Storage, Databricks, and designed the front-end in Power BI.
+- Designed and implemented the Content Comparison Audit Tool (Alteryx + Power BI) to align brand and content teams on preferred digital assets, improving customer experience.`,
   },
   {
     role: "Digital Transparency Analyst",
     company: "The Hershey Company",
     period: "January 2023 — June 2023",
-    description: `- Product Owner for the Content Transparency Tool—a proprietary workflow and front-end solution enabling real-time content syndication tracking. This tool directly contributed[...]
-- Took over ownership of the SmartLabel process and led a cross-functional initiative involving Digital, ESG, IS, Regulatory, and Legal teams to transition ownership to an external partner, resul[...]
+    description: `- Product Owner for the Content Transparency Tool—a proprietary workflow and front-end solution enabling real-time content syndication tracking.
+- Took over ownership of the SmartLabel process and led a cross-functional initiative involving Digital, ESG, IS, Regulatory, and Legal teams to transition ownership to an external partner.`,
   },
   {
     role: "HR Data Analyst",
