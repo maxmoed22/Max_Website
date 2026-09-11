@@ -19,8 +19,8 @@ export const about = {
   heading: "About",
   subheading: "Outside of Work",
   paragraphs: [
-    "I’m a technology and analytics professional with a background in enterprise architecture, business architecture, data analytics, and digital innovation. I enjoy working at the intersection of technology and business—turning complex problems and data into practical solutions that make people’s work more efficient. I’m especially interested in emerging technologies, automation, data, and finding new ways to use technology to create meaningful business impact.",
-    "When I’m not working, I love spending time with my friends, cooking, and staying active. I’m also really interested in building PCs and learning more about the hardware and technology that goes into them. One of my next hobbies I’m hoping to get into is 3D printing, especially as another way to combine technology, creativity, and hands-on projects. Lastly, I'm a big fan of video games, watching Gundam anime, and love building legos!",
+    "I'm a technology and analytics professional with a background in enterprise architecture, business architecture, data analytics, and digital innovation. I enjoy working at the intersection [...]
+    "When I'm not working, I love spending time with my friends, cooking, and staying active. I'm also really interested in building PCs and learning more about the hardware and technology tha[...]
   ],
 };
 
@@ -35,17 +35,10 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Business Architecture Modeling Project: Tesla",
-    description: "Enterprise modeling project focused on Tesla’s business, systems, and technology landscape.",
+    description: "Enterprise modeling project focused on Tesla's business, systems, and technology landscape.",
     tags: ["Business Architecture", "Enterprise Modeling"],
     href: "/projects/enterprise-modeling-tesla.pdf",
     image: "/projects/tesla-business-architecture-thumbnail.png",
-  },
-  {
-    title: "Enterprise Architecture Modeling Project",
-    description: "Final project exploring business architecture concepts, analysis, and design.",
-    tags: ["Enterprise Architecture", "Enterprise Modeling"],
-    href: "/projects/enterprise-modeling-final.pdf",
-    image: "/projects/enterprise-architecture-modeling-thumbnail.png",
   },
   {
     title: "Figma Design Project",
@@ -75,9 +68,9 @@ export const experience: ExperienceItem[] = [
     role: "Senior Developer",
     company: "American Honda Motor Co.",
     period: "April 2026 — Present",
-    description: `- Techline Dashboard — Created wireframes, models, and dashboards in Qlik, Power BI, and AWS Redshift for the Techline team, helping identify warranty issues faster and saving 5–10 hours per week per user.
-- Battery Dashboard — Created a GitHub repository, ETL pipeline, QVD generators, and a Qlik dashboard to surface “Golden Battery” candidates and potential problem dealerships, saving Honda thousands in false replacement battery warranty claims.
-- BEAR Application — Leading UI/UX design for budgeting and expense reporting app (BEAR) full-stack app with Figma, Confluence, and VS Code using agile sprints and GitHub CI/CD across market quality and expense teams.`,
+    description: `- Techline Dashboard — Created wireframes, models, and dashboards in Qlik, Power BI, and AWS Redshift for the Techline team, helping identify warranty issues faster and saving [...]
+- Battery Dashboard — Created a GitHub repository, ETL pipeline, QVD generators, and a Qlik dashboard to surface "Golden Battery" candidates and potential problem dealerships, saving Honda t[...]
+- BEAR Application — Leading UI/UX design for budgeting and expense reporting app (BEAR) full-stack app with Figma, Confluence, and VS Code using agile sprints and GitHub CI/CD across market qua[...]
   },
   {
     role: "Dx Program Lead - Business Architect",
@@ -90,9 +83,9 @@ export const experience: ExperienceItem[] = [
     role: "Lead Analyst, OMNI & B2B Insights",
     company: "The Hershey Company",
     period: "October 2024 — October 2025",
-    description: `- Developed and automated monthly digital performance reports for the Walmart OMNI team covering search, content, and ratings/reviews using Alteryx and Databricks, saving 5 hours per month.
+    description: `- Developed and automated monthly digital performance reports for the Walmart OMNI team covering search, content, and ratings/reviews using Alteryx and Databricks, saving 5 hours[...]
 - Led a competitive insights project and presented key findings to leadership, guiding strategic decisions and delivering 4% budget savings based on competitor practices.
-- Built B2B sales reporting models in SAP Datasphere and dashboards in SAC to support data-driven decision-making and track transitions from email to web orders, driving a 10% sales increase on average per customer.
+- Built B2B sales reporting models in SAP Datasphere and dashboards in SAC to support data-driven decision-making and track transitions from email to web orders, driving a 10% sales increase on av[...]
 - Built an on-demand Power BI dashboard for Instacart, GoPuff, Uber, and DoorDash to drive insights and increase sales by 20%.
 - Expanded the KPS dashboard using Python in Databricks and Power BI to improve product keyword targeting across retailers, helping paid media and SEO drive overall sales growth of more than 5%.`,
   },
@@ -100,15 +93,15 @@ export const experience: ExperienceItem[] = [
     role: "Analyst, Insights & Analytics",
     company: "The Hershey Company",
     period: "June 2023 — October 2024",
-    description: `- Delivered the end-to-end automation of the CTT system using Alteryx, Axway Secure File Transfer, and Azure File Storage, Databricks, and designed the front-end in Power BI to enhance workflow efficiency and visibility. Increased efficiency by 10+ minutes per asset leading to over 2 million assets being touched per year.
-- Designed and implemented the Content Comparison Audit Tool (Alteryx + Power BI) to align brand and content teams on preferred digital assets, improving customer experience and reducing content mismatches by over 85% on product PDPs on strategic retailers.`,
+    description: `- Delivered the end-to-end automation of the CTT system using Alteryx, Axway Secure File Transfer, and Azure File Storage, Databricks, and designed the front-end in Power BI to [...]
+- Designed and implemented the Content Comparison Audit Tool (Alteryx + Power BI) to align brand and content teams on preferred digital assets, improving customer experience and reducing content [...]
   },
   {
     role: "Digital Transparency Analyst",
     company: "The Hershey Company",
     period: "January 2023 — June 2023",
-    description: `- Product Owner for the Content Transparency Tool—a proprietary workflow and front-end solution enabling real-time content syndication tracking. This tool directly contributed to doubling Hersheys online business to over $1B in 2025.
-- Took over ownership of the SmartLabel process and led a cross-functional initiative involving Digital, ESG, IS, Regulatory, and Legal teams to transition ownership to an external partner, resulting in increased compliance and over 200% more product pages.`,
+    description: `- Product Owner for the Content Transparency Tool—a proprietary workflow and front-end solution enabling real-time content syndication tracking. This tool directly contributed[...]
+- Took over ownership of the SmartLabel process and led a cross-functional initiative involving Digital, ESG, IS, Regulatory, and Legal teams to transition ownership to an external partner, resul[...]
   },
   {
     role: "HR Data Analyst",
